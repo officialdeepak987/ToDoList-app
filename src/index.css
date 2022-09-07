@@ -1,13 +1,132 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Roboto:ital,wght@1,500&family=Work+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif; 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+ .list{
+    width: 100%;
+    height: 100vh;
+  
+    background-color:#f6a897;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+} 
+
+.child_list{
+   width: 25%;
+   height: 80vh;
+   background-color:  #f8f5f4;
+   box-shadow: 5px 5px 25px -5px rgb(0, 0, 0.5);
+   border-radius: 30px; 
+    
+}
+.btn-side{
+
+  display: flex;
+  gap: 10px;
+}
+
+input{
+text-align: center;
+height: 30px;
+top: 10px;
+border: none;
+background: transparent;
+font-size: 20px;
+font-weight: 500;
+width: 80%;
+border-bottom: 2px solid #662a1d;
+outline: none;
+
+}
+button{
+  min-height: 40px;
+  width:40px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: aqua;
+  color: #ffffff;
+  font-size: 30px;
+  border: none;
+  outline: none;
+  margin-left: 7px;
+  box-shadow: 5px 5px 25px -5px rgb(0, 0, 0.5);
+}
+
+
+button:hover{
+  background-color: green;
+}
+h2{
+    width: 100%;
+    background-color:  #662a1d;
+    color:  #ffffff ;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 25px -5px rgb(0, 0, 0.5);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+ol{
+  margin-top: 30px;
+}
+
+ol li{
+  padding-left: 0px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 500;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  color: rgb(22, 21, 1);
+  text-transform: capitalize;
+}
+
+.todo_style{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+
+}
+.todo_style .fa-times{
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4f3e3a;
+  border-radius: 50%;
+  margin: 0 15 px 0 35px;
+  color: rgb(247, 248, 249);
+  box-shadow: 5px 5px 25px -5px rgb(0, 0, 0.5);
+}
+
+.todo_style .fa-times:hover {
+  color: red;
+}
+@media(max-width:768px){
+  .child_list{
+    width: 55%;
+  }
+}
+.todo_style .fa-times{
+  margin: 0 15px 0 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media(max-width:450px){
+ .child_list{
+  width:300px;
+ }
 }
